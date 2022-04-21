@@ -7,7 +7,7 @@ Ryan Yang*, Tom Silver*, Aidan Curtis, Tomas Lozano-Perez, Leslie Kaelbling
 
 For any questions or issues with the code, please email ryanyang@mit.edu and tslvr@mit.edu.
 
-Link to paper: INSERT LINK
+Link to paper: *Coming soon*
 
 Instructions for running (tested on OS X and Ubuntu 18.04):
 * Use Python 3.6 or higher.
