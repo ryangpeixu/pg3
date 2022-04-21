@@ -1,0 +1,4 @@
+numpy
+pddlgym
+pddlgym@git+https://github.com/tomsilver/pddlgym.git@13d88a3fd88759813382c86b8e355c3974a7a013
+tqdm
