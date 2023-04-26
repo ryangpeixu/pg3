@@ -87,6 +87,17 @@ class GlobalSettings:
 
             ))
 
+        elif args["env"] == "heavypack":
+            arg_settings.update(dict(
+                max_num_steps=1000,
+                train_env_name="heavypack",
+                train_problem_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9,],
+                test_env_name="heavypack_test",
+                test_problem_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+                operators_as_actions = True,
+                dynamic_action_space = True,
+            ))
+
         else:
             raise Exception(f"Unrecognized env {args.env}")
 

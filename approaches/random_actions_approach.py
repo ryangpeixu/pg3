@@ -10,7 +10,7 @@ class RandomActionsApproach(BaseApproach):
         """
         pass
 
-    def get_action(self, state):
+    def get_action(self, state, env=None):
         """
         Parameters
         ----------
@@ -21,5 +21,11 @@ class RandomActionsApproach(BaseApproach):
         action : Literal
             From PDDLGym structs
         """
-        return self._action_space.sample(state)
+        try:
+            act = env.action_space.sample(state)
+            print(act)
+            return act
+        except ValueError as e:  # dead-end
+            assert "a must be a positive integer unless no samples are taken" in str(e)
+        return None
 

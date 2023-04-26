@@ -32,6 +32,8 @@ def run_single_seed(test_env, test_problem_indices, approach,
                                approach, seed,
                                max_num_steps=max_num_steps)
     all_results.append(result)
+    if approach.__class__.__name__ == "RandomActionsApproach":
+        return all_results
     # Allow the approach to learn
     for epoch in range(num_epochs):
         print(f"Starting learning epoch {epoch}")

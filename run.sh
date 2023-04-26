@@ -3,9 +3,9 @@
 EXEC=python #python
 
 START_SEED=0
-NUM_SEEDS=1
+NUM_SEEDS=10
 
-ENV="spannerlearning" #hiking or trapnewspapers or manymiconic or manygripper or manyferry or spannerlearning
+ENV="heavypack" #hiking or trapnewspapers or manymiconic or manygripper or manyferry or spannerlearning
 APPROACH="look_ahead" #look_ahead
     
 for SEED in $(seq $START_SEED $((NUM_SEEDS+START_SEED-1))); do
